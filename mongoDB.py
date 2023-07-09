@@ -20,8 +20,8 @@ mydict = [
 
 # x = mycol.delete_many({})
 # print(x.deleted_count, " documents deleted.")
-x = mycol.insert_many(mydict)
+# x = mycol.insert_many(mydict)
 # print(mydb.list_collection_names()) #"Check if Collection Exists"
 # print(x.inserted_ids)  # print list of the _id values of the inserted documents:
 for x in mycol.find():
-  print(x)
+    print(x)
