@@ -17,11 +17,24 @@ mydict = [
     {"_id": 10, "name": "Timus", "address": "Highway 44"},
 
 ]
+# x = mycol.insert_many(mydict)
+for x in mycol.find():
+    print(x)
+#print(mydb.list_collection_names())
+
+''' 
+myquery = {"name":"Jim","address":"Highway 43"}
+mydoc = mycol.find(myquery)
+for x in mydoc:
+    print(x) 
+'''
 
 # x = mycol.delete_many({})
 # print(x.deleted_count, " documents deleted.")
-# x = mycol.insert_many(mydict)
+
+
+
 # print(mydb.list_collection_names()) #"Check if Collection Exists"
 # print(x.inserted_ids)  # print list of the _id values of the inserted documents:
-for x in mycol.find():
-    print(x)
+
+
