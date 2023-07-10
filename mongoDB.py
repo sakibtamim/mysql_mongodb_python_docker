@@ -22,11 +22,23 @@ for x in mycol.find():
     print(x)
 #print(mydb.list_collection_names())
 
-''' 
-myquery = {"name":"Jim","address":"Highway 43"}
+'''#limit result
+myresult = mycol.find().limit(2)
+for x in myresult:
+    print(x)
+'''
+
+'''#filter restult
+myquery = {"address":}
 mydoc = mycol.find(myquery)
 for x in mydoc:
     print(x) 
+'''
+
+'''#sort result
+mydoc = mycol.find().sort("name", -1)
+for x in mydoc:
+    print(x)
 '''
 
 # x = mycol.delete_many({})
